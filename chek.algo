@@ -1,0 +1,40 @@
+ALGORITHM chek
+VAR
+num_car , num_mot , num_vowel : integer;
+ch : string ;
+BEGIN
+ch := "The number of words in the sentence (assuming that the words are separated by a single space).
+The number of vowels in the sentence.
+You have to keep in mind that."
+num_car := 0;
+num_mot :=0;
+num_vowel :=0;
+do
+    num_car := num_car +1 
+    if(ch[num_car]=" ") then
+         num_mot := num_mot+1
+    endif
+     SWITCH (ch[num_car]) do 
+        default: break;
+        "a" : num_vowel := num_vowel +1;
+        break;
+        "e" : num_vowel := num_vowel +1;
+        break;
+        "i" : num_vowel := num_vowel +1;
+        break;
+        "u" : num_vowel := num_vowel +1;
+        break;
+        "o" : num_vowel := num_vowel +1;
+        break;
+        "y" : num_vowel := num_vowel +1;  
+        break;
+      endSWITCH
+while(ch[i]=".")
+num_mot= num_mot +1 ;
+write(" nombre des caracteres est :" )
+write(num_car)
+write("nombre des mots :" )
+write(num_mot)
+write("nombre des voyelle :" )
+write(num_vowel)
+end.  
